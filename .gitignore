@@ -1,0 +1,9 @@
+/.idea
+/shelf/
+/workspace.xml
+*.xml
+*.iml
+*.iws
+#Maven
+/target/
+resources
