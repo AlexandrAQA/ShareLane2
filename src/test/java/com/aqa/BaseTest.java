@@ -1,7 +1,6 @@
 package com.aqa;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -19,7 +18,7 @@ public class BaseTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().window().setSize(new Dimension(720, 480));
+        //driver.manage().window().setSize(new Dimension(720, 480));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         System.out.println();
